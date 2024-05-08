@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input Types & Attributes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Form Input Types & Attributes</h1>
+
+    <h2>Input Types</h2>
+    <form>
+      <label for="text-input">Text (Single Line):</label>
+      <input
+        type="text"
+        id="text-input"
+        name="text-input"
+        placeholder="Enter some text"
+        maxlength="20"
+      />
+
+      <label for="email-input">Email:</label>
+      <input
+        type="email"
+        id="email-input"
+        name="email-input"
+        placeholder="abc@gmail.com"
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Please enter a valid email address"
+      />
+
+      <label for="password-input">Password:</label>
+      <input
+        type="password"
+        id="password-input"
+        name="password-input"
+        minlength="8"
+      />
+
+      <label for="number-input">Number:</label>
+      <input
+        type="number"
+        id="number-input"
+        name="number-input"
+        min="1"
+        max="100"
+        step="1"
+      />
+
+      <label for="tel-input">Phone Number:</label>
+      <input
+        type="tel"
+        id="tel-input"
+        name="tel-input"
+        placeholder="0712345678"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+
+      <label for="url-input">URL:</label>
+      <input
+        type="url"
+        id="url-input"
+        name="url-input"
+        placehoder="https://www.example.com"
+      />
+
+      <label for="date-input">Date:</label>
+      <input type="date" id="date-input" name="date-input" />
+
+      <label for="time-input">Time:</label>
+      <input type="time" id="time-input" name="time-input" />
+
+      <label for="datetime-local">Date & Time:</label>
+      <input type="datetime-local" id="datetime-local" name="datetime-local" />
+
+      <label for="search-input">Search:</label>
+      <input
+        type="search"
+        id="search-input"
+        name="search-input"
+        placeholder="Search for something"
+      />
+
+      <label for="file-input">File Upload:</label>
+      <input type="file" id="file-input" name="file-input" accept="image/*" />
+      <label for="color-input">Color Picker:</label>
+      <input type="color" id="color-input" name="color-input" value="#ff0000" />
+
+      <label for="checkbox">Checkbox (Multiple Choices allowed):</label>
+      <div class="multiple-inputs">
+        <input
+          type="checkbox"
+          id="checkbox1"
+          name="checkbox[]"
+          value="option1"
+        />
+        Option 1
+        <input
+          type="checkbox"
+          id="checkbox2"
+          name="checkbox[]"
+          value="option2"
+        />
+        Option 2
+        <input
+          type="checkbox"
+          id="checkbox3"
+          name="checkbox[]"
+          value="option3"
+        />
+        Option 3
+      </div>
+
+      <label for="radio1">Radio Button (Only one selection allowed):</label>
+      <div class="multiple-inputs">
+        <input type="radio" id="radio1" name="radio" value="option1" /> Option 1
+        <input type="radio" id="radio2" name="radio" value="option2" /> Option 2
+      </div>
+
+      <label for="textarea">Text Area (Multi-Line Text): </label>
+      <textarea
+        id="textarea"
+        name="textarea"
+        rows="4"
+        cols="50"
+        placeholder="Enter some text"
+      ></textarea>
+    </form>
+  </body>
+</html>
